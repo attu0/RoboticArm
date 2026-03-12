@@ -1,0 +1,61 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Cell Size: 0.1
+      Enabled: true
+      Name: Grid
+      Plane Cell Count: 20
+    - Class: rviz_default_plugins/RobotModel
+      Description Topic:
+        Value: /robot_description
+      Enabled: true
+      Name: RobotModel
+    - Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: true
+      Name: MotionPlanning
+      Robot Description: robot_description
+      Move Group Namespace: ""
+      Planning Scene Topic: /monitored_planning_scene
+      Planning Request:
+        Planning Group: arm
+        Interactive Marker Size: 0.15
+        Query Goal State: true
+        Query Start State: true
+      Planned Path:
+        Show Robot Visual: true
+        Show Robot Collision: false
+        State Display Time: 0.05s
+        Loop Animation: false
+        Show Trail: false
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: world
+    Frame Rate: 30
+  Value: true
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/Select
+  Current Tool: rviz_default_plugins/MoveCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 1.0
+      Enable Stereo Rendering:
+        Value: false
+      Focal Point:
+        X: 0.0
+        Y: 0.0
+        Z: 0.2
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.01
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.55
+      Target Frame: base_link
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 1.2
+    Saved: ~
